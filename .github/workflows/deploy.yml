@@ -24,7 +24,7 @@ jobs:
         env: 
           DOCKER_USERNAME: ${{ secrets.DOCKER_USERNAME }}
         run: |
-          docker build -t myapp .
+          docker build -t myapp ./myapp
           docker tag myapp $DOCKER_USERNAME/myapp:latest
           docker push $DOCKER_USERNAME/myapp:latest
 
