@@ -31,7 +31,7 @@ jobs:
       - name: sshsetup
         run: |
           mkdir -p ~/.ssh
-          printf "%s" "${{ secrets.VPS_KEY }}" > ~/.ssh/id_ed25519
+          echo "${{ secrets.VPS_KEY }}" | base -d  > ~/.ssh/id_ed25519
           chmod 600 ~/.ssh/id_ed25519
           ssh-keyscan -H 64.188.65.35 >> ~/.ssh/known_hosts
 
