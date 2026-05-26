@@ -2,7 +2,7 @@ from http.server import HTTPServer, BaseHTTPRequestHandler
 
 class Handler(BaseHTTPRequestHandler):
     def do_GET(self):
-        body = b"Hello from my DevOps app!\n"
+        body = b"Hello from my DevOps app! v2\n"
         self.send_response(200)
         self.send_header("Content-Length", str(len(body)))
         self.end_headers()
