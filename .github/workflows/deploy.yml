@@ -35,6 +35,10 @@ jobs:
           chmod 600 ~/.ssh/id_ed25519
           ssh-keyscan -H 64.188.65.35 >> ~/.ssh/known_hosts
 
+      - name: ssh debug
+        run: |
+          ssh-keygen -y -f ~/.ssh/id_ed25519
+
       - name: deploy to vps
         env:
           DOCKER_USERNAME: ${{ secrets.DOCKER_USERNAME }}
@@ -46,4 +50,3 @@ jobs:
             docker rm myapp || true &&
             docker run -d --name myapp -p 80:3000 $DOCKER_USERNAME/myapp:latest
           "
-
