@@ -45,8 +45,8 @@ jobs:
         
         run: |
           ssh root@64.188.65.35 "
-            docker pull $DOCKER_USERNAME/myapp:latest &&
-            docker stop myapp || true &&
-            docker rm myapp || true &&
-            docker run -d --name myapp -p 8080:8080 $DOCKER_USERNAME/myapp:latest
+            cd ~/firstapp/myapp &&
+            docker-compose pull &&
+            docker-compose down &&
+            docker-compose up -d
           "
