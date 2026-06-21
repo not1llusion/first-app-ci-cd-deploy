@@ -1,3 +1,4 @@
+![CI/CD](https://github.com/not1llusion/first-app-ci-cd-deploy/actions/workflows/deploy.yml/badge.svg)
 # First DevOps app.
 
 This project demonstrates a CI/CD pipeline using simple Python web application. 
