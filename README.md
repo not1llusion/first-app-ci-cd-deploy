@@ -20,4 +20,4 @@ This project demonstrates a CI/CD pipeline using simple Python web application.
 - HTTPS via Let's Encrypt
 
 ## Live Demo
-[notillusion.duckdns.org](https://notillusion.duckdns.org:8080)
+[notillusion.duckdns.org](https://notillusion.duckdns.org)
