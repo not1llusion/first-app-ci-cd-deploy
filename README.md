@@ -18,3 +18,6 @@ This project demonstrates a CI/CD pipeline using simple Python web application.
 - VPS: play2go (Ubuntu 22.04)
 - Domain: notillusion.duckdns.org
 - HTTPS via Let's Encrypt
+
+## Live Demo
+[notillusion.duckdns.org](https://notillusion.duckdns.org:8080)
